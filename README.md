@@ -5,6 +5,10 @@ In this proof of concept, the trajectory of a cooled Ytterbium ion is modeled as
 
 <img width="871" alt="Screenshot 2025-03-30 at 22 20 56" src="https://github.com/user-attachments/assets/5ef15eb3-1e28-41c9-ab7e-a865677b2a85" />
 
+### Key Components
+* Ytterbium Ion - simulates the trajectory of the ion at low temperatures using a random walk with a parameterized drift
+* Laser - generates an EM wave propagating toward the ion, with measured electric field values
+* PID Controller - adjusts the frequency of the laser to compensate for the Doppler Shift that occurs as the ion drifts toward/away from the laser
 
 ### Laser Properties Susceptible to Drift
 1. Frequency

@@ -31,6 +31,20 @@ export const pidFrequencyController = (previousFrequencyShift: number, currentFr
         + integralCoefficient * -1 * integralOfShift
         + derivativeCoefficient * -1 * derivativeOfShift;
 
+    /* if ((currentFrequencyShift < 0 && adjustment < 0) || (currentFrequencyShift > 0 && adjustment > 0)) {
+        console.log(`previousFrequencyShift: ${previousFrequencyShift}`);
+        console.log(`currentFrequencyShift: ${currentFrequencyShift}`);
+        console.log(`accumulatedFrequencyShift: ${accumulatedFrequencyShift}`);
+        console.log(`Proportional term: ${proportionalCoefficient * -1 * currentFrequencyShift}`);
+        console.log(`integralOfShift: ${integralOfShift}`);
+        console.log(`Integral term: ${integralCoefficient * -1 * integralOfShift}`);
+        console.log(`derivativeOfShift: ${derivativeOfShift}`);
+        console.log(`Derivative term ${derivativeCoefficient * -1 * derivativeOfShift}`);
+        console.log(`adjustment: ${adjustment}`);
+        console.log("");
+        console.log("");
+    } */
+
     return {
         accumulatedFrequencyShift: integralOfShift,
         previousFrequencyShift: currentFrequencyShift,
