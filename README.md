@@ -2,7 +2,9 @@
 This project serves as a base for a future laser simulator that can be used to test and examine control methods that correct laser properties that drift with time. It can serve as a low-cost testing gate to expose more basic failures earlier in the process.
 
 In this proof of concept, the trajectory of a cooled Ytterbium ion is modeled as a random walk in three dimensional space with a drift in the z-direction. A laser, on the z-axis, is emitting an electromagnetic wave in the direction of the ion. As the ion drifts along the z-axis, its perception of the frequency of the laser changes according to the Doppler effect. To maintain the correct frequency needed for cooling the ion with the laser, a simple PID controller adjusts the frequency of the laser to remain at the target frequency needed for cooling.
-<img width="1052" alt="Screenshot 2025-03-30 at 22 01 45" src="https://github.com/user-attachments/assets/e8bf1d10-d736-47f9-9e8e-bdd598c7fac9" />
+
+<img width="871" alt="Screenshot 2025-03-30 at 22 20 56" src="https://github.com/user-attachments/assets/5ef15eb3-1e28-41c9-ab7e-a865677b2a85" />
+
 
 ### Laser Properties Susceptible to Drift
 1. Frequency
