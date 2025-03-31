@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "module": "NodeNext",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "target": "ES2023",
+    "allowJs": true,
+    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "./typings/*"],
+    "declaration": false,
+    "outDir": "dist",
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*",
+    "logging/**/*",
+    "db/**/*"
+  ],
+  "exclude": ["node_modules", "build", "dist"]
+}
